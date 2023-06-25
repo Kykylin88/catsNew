@@ -69,7 +69,7 @@ function createCard(cat, el = box) {
 function deleteCard(id, el) {
     if (id) {
         fetch(`${path}/delete/${id}`, {
-            method: "delete"
+            method: "DELETE"
         })
             .then(res => {
                 //console.log(res);
@@ -146,6 +146,9 @@ if (cats) {
             }
         })
 }
+
+
+
 
 
 

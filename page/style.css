@@ -3,31 +3,40 @@
     height: 20px;
     background-color: rgb(216, 68, 14);
     display: flex;
-justify-content: center;}
+    justify-content: center;
+}
 
 body {
-    margin: 0;
+    margin: 0px;
     background-color: lemonchiffon;
 
 }
 
 .info {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: auto;
     text-shadow: 0 16px 36px rgb(16, 15, 15);
+    margin: 100px;
     padding: 100px;
     text-align: inherit;
+    background-size: cover;
     background-color: azure;
     color: white;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .default {
-    height: 150px;
-    width: 200px;
+    height: 100%;
+    width: auto;
     background-image: url("../images/default.png");
     background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
 }
+
 
 
 .modal-container {
@@ -100,4 +109,21 @@ nav {
 
 .control>i:hover {
     color: silver;
+}
+
+
+
+/* Медиазапросы */
+@media screen and (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button {
+        margin-bottom: 10px;
+    }
+
+    .info {
+        width: 90%;
+    }
 }
