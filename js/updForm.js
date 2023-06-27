@@ -1,24 +1,4 @@
-/*const update = document.querySelector(".update");
-const updForm = document.forms.upd;
-const mdBoxUpd = document.querySelector(".modal-container");
-const mdCloseUpd = mdBoxUpd.querySelector(".modal-close");
-const updBtn = document.querySelector(".updBtn");
-let cats = localStorage.getItem("cats-data");
 
-update.addEventListener("click", e => {
-    mdBoxUpd.style.display = "flex";
-});
-mdCloseUpd.addEventListener("click", e => {
-    mdBoxUpd.style = null;
-});
-
-
-
-// fetch
-updForm.addEventListener("submit", e => {
-     
-    e.preventDefault();
-    const body = {};*/
 
 const update = document.querySelector(".update");
 const updForm = document.forms.upd;
